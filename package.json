@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ryanstokes21/play2learn/issues"
   },
-  "homepage": "https://github.com/ryanstokes21/play2learn#readme"
+  "homepage": "https://github.com/ryanstokes21/play2learn#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
