@@ -1,0 +1,63 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#logo span {
+  color: #60a5fa;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #242e3d;
+}
+.contains:hover ul {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.contains ul {
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.contains ul a {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.section {
+  background-color: #19243a;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin: 1rem;
+  border: 1px solid #60a5fa8d;
+}
+
+.game-card {
+  max-width: 400px;
+}
