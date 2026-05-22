@@ -1,11 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <aside class="sidebar section">
+      <div>
+        <div id="logo">Play<span>2</span>Learn</div>
+        <nav id="upper-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="contains">
+              <a href="#games">Games</a>
+              <ul>
+                <li>
+                  <a href="pages/games/anagram-hunt.html">Anagram Hunt</a>
+                </li>
+                <li><a href="pages/games/math-facts.html">Math Facts</a></li>
+              </ul>
+            </li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav id="lower-nav">
+        <ul>
+          <li><a href="pages/contact.html">contact</a></li>
+          <li><a href="https://instagram.com">instagram</a></li>
+          <li><a href="https://twitter.com">twitter</a></li>
+          <li><a href="https://facebook.com">facebook</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section class="section">
+        <h3>Happy Clients Say...</h3>
+        <p>This is a quote placeholder</p>
+        <p>-ryan</p>
+      </section>
+
+      <section class="section games">
+        <div class="game-card">
+          <h2>Anagram Hunt</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius neque
+            minima animi a rem. Ut nemo, eius et sed facere similique
+            exercitationem tempora dignissimos aperiam odit enim possimus
+            officiis nesciunt.
+          </p>
+          <div class="action-btn">
+            <button>Play</button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <h2>Math Facts Practice</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius neque
+            minima animi a rem. Ut nemo, eius et sed facere similique
+            exercitationem tempora dignissimos aperiam odit enim possimus
+            officiis nesciunt.
+          </p>
+          <div class="action-btn">
+            <button>Play</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
