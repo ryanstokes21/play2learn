@@ -2,9 +2,30 @@
 @import url(./components.css);
 @import url(./forms.css);
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --primary-text-color: #fff;
-  --bg-color: #111;
-  --section-bg-color: #19243a;
-  --border-color: #60a5fa8d;
+  --sidebar-bg: #111827;
+  --main-bg: #f3f4f6;
+  --card-bg: #fff;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --text-main: #111827;
+  --text-light: #6b7280;
+
+  --border-radius: 18px;
+
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-main);
 }
