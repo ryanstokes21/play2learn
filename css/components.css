@@ -1,14 +1,13 @@
-/* ===== sidebar ===== */
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: white;
+  padding: 2rem 1.5rem;
+}
 
 .logo {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  text-align: center;
-}
-
-.logo:hover {
-  cursor: pointer;
 }
 
 .logo span {
@@ -19,27 +18,33 @@
   list-style: none;
 }
 
+.nav-menu li {
+  margin-bottom: 0.75rem;
+}
+
 .nav-menu a {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: white;
   display: block;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  transition: background-color 0.2s ease;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .nav-menu a:hover {
-  background-color: #242e3d;
-}
-
-.contains:hover ul {
-  display: block;
-  margin-top: 0.5rem;
+  background-color: #1f2937;
 }
 
 .contains ul {
   display: none;
   margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.contains:hover ul {
+  display: block;
 }
 
 .contains ul a {
@@ -47,50 +52,123 @@
   opacity: 0.85;
 }
 
-/* ===== header ===== */
-
-header div {
-  width: 50%;
-  display: flex;
-  justify-content: end;
+header {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 #searchBar {
-  width: 100%;
+  width: 350px;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 14px;
+  background-color: #f3f4f6;
+  font-size: 1rem;
+  outline: none;
 }
 
-[aria-label='profile'] {
-  background-color: black;
-  width: 40px;
-  height: 40px;
+#searchBar:focus {
+  outline: 2px solid var(--primary);
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--border-color); /* The color of the ring */
-  padding: 5px;
+  background-color: #d1d5db;
+  overflow: hidden;
 }
 
-/* ===== main ===== */
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-main .section {
-  margin-bottom: 20px;
+main {
+  padding: 2rem;
 }
 
 .section {
-  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius);
+}
+
+.quote {
+  background-color: white;
   padding: 2rem;
-  border-radius: 2rem;
-  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.quote h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.quote p {
+  color: var(--text-light);
+  line-height: 1.5;
 }
 
 .game-card {
-  max-width: 400px;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.game-card h2 {
+  margin-bottom: 1rem;
 }
 
 .img-container {
-  border: 1px solid var(--border-color);
-  text-align: center;
-  border-radius: 1rem;
-  background-color: black;
-  height: 350px;
-  width: 300px;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e7eb;
+  border-radius: 14px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.action-btn {
+  margin-top: auto;
+}
+
+button {
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.9rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
 }
