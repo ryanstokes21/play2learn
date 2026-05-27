@@ -37,23 +37,3 @@ main {
   display: flex;
   flex-direction: column;
 }
-
-@media (max-width: 900px) {
-  .dashboard-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .sidebar {
-    gap: 2rem;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: stretch;
-  }
-
-  #searchBar {
-    width: 100%;
-  }
-}
