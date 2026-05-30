@@ -73,29 +73,30 @@
       <div class="main-layout">
         <header>
           <div class="profile">
-            <img src="" />
+            <img src="../images/profile-placeholder.jpeg" />
           </div>
         </header>
 
-        <main>
-          <h2>Contact Us</h2>
-          <div class="form-layout">
-            <form action="javascript:alert('Form Submitted')" method="post">
-              <div class="form-input">
-                <label for="contact-email">Your email:</label>
-                <input type="email" name="contact-email" id="contact-email" />
-              </div>
-              <div class="form-input">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" />
-              </div>
-              <div class="form-input">
-                <label for="msg">
+        <main class="center">
+          <div class="card card-small">
+            <h2>Contact Us</h2>
+            <div class="form-layout">
+              <form action="javascript:alert('Form Submitted')" method="post">
+                <div class="form-input">
+                  <label for="contact-email">Your email:</label>
+                  <input type="email" name="contact-email" id="contact-email" />
+                </div>
+                <div class="form-input">
+                  <label for="subject">Subject:</label>
+                  <input type="text" name="subject" id="subject" />
+                </div>
+                <div class="form-input">
+                  <label for="msg"> Message: </label>
                   <textarea name="msg" id="msg"></textarea>
-                </label>
-              </div>
-              <button type="submit">SEND</button>
-            </form>
+                </div>
+                <button type="submit" class="action-btn">SEND</button>
+              </form>
+            </div>
           </div>
         </main>
       </div>

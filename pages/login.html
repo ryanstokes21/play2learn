@@ -73,24 +73,27 @@
       <div class="main-layout">
         <header>
           <div class="profile">
-            <img src="" />
+            <img src="../images/profile-placeholder.jpeg" />
           </div>
         </header>
 
-        <main>
-          <h2>Log in</h2>
-          <div class="form-layout">
-            <form action="javascript:alert('Form Submitted')" method="post">
-              <div class="form-input">
-                <label for="email">Your email:</label>
-                <input type="email" name="email" id="login-email" />
-              </div>
-              <div class="form-input">
-                <label for="psw">Subject</label>
-                <input type="password" name="psw" id="login-psw" />
-              </div
-              <button type="submit">LOGIN</button>
-            </form>
+        <main class="center">
+          <div class="card card-small">
+            <h2>Login</h2>
+            <div class="form-layout">
+              <form action="javascript:alert('Form Submitted')" method="post">
+                <div class="form-input">
+                  <label for="email">Your email:</label>
+                  <input type="email" name="email" id="login-email" />
+                </div>
+                <div class="form-input">
+                  <label for="psw">Password:</label>
+                  <input type="password" name="psw" id="login-psw" />
+                </div>
+                <button type="submit" class="action-btn">LOGIN</button>
+              </form>
+            </div>
+          </div>
         </main>
       </div>
     </div>
