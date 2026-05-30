@@ -54,26 +54,19 @@
   opacity: 0.85;
 }
 
+svg {
+  fill: white;
+  height: 30px;
+}
+
 /* header */
 
 header {
   background-color: white;
   padding: 1.5rem 2rem;
   border-bottom: 1px solid #e5e7eb;
-}
-
-#searchBar {
-  width: 350px;
-  padding: 0.9rem 1rem;
-  border: none;
-  border-radius: 14px;
-  background-color: #f3f4f6;
-  font-size: 1rem;
-  outline: none;
-}
-
-#searchBar:focus {
-  outline: 2px solid var(--primary);
+  display: flex;
+  justify-content: end;
 }
 
 .profile {
@@ -94,12 +87,31 @@ header {
 
 main {
   padding: 2rem;
+  height: 100%;
+  width: 100%;
 }
 
-.section {
+.card {
+  background-color: var(--card-bg);
+  padding: 2rem;
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 
+.card-small {
+  width: min(600px, 90%);
+}
+
+.margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 /* quotes section */
 
 .quote {
@@ -118,18 +130,9 @@ main {
   line-height: 1.5;
 }
 
-svg {
-  fill: white;
-  height: 40px;
-}
-
 /* games section */
 
 .game-card {
-  background-color: var(--card-bg);
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -169,7 +172,7 @@ svg {
   margin-top: auto;
 }
 
-button {
+.btn {
   border: none;
   background-color: var(--primary);
   color: white;
@@ -183,7 +186,7 @@ button {
     transform 0.2s ease;
 }
 
-button:hover {
+.btn:hover {
   background-color: var(--primary-hover);
   transform: translateY(-2px);
 }
