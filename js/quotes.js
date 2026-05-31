@@ -43,9 +43,8 @@ const testimonials = [
 let index = 0;
 
 export default function showTestimonial() {
-  const t = testimonials[index];
-  document.getElementById('quote').textContent = t.quote;
-  document.getElementById('name').textContent = `~ ${t.name}`;
-
+  const testimonial = testimonials[index];
+  document.getElementById('quote').textContent = testimonial.quote;
+  document.getElementById('name').textContent = `~ ${testimonial.name}`;
   index = (index + 1) % testimonials.length;
 }
