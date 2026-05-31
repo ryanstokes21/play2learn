@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/main.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
     <title>Home</title>
   </head>
   <body>
@@ -81,9 +81,11 @@
 
         <main>
           <section class="card quote">
-            <h3>Happy Clients Say...</h3>
-            <p>This is a quote placeholder</p>
-            <p>-ryan</p>
+            <div class="testimonial">
+              <h3>Happy Clients Say...</h3>
+              <p id="quote"></p>
+              <p id="name"></p>
+            </div>
           </section>
 
           <section class="games">
@@ -93,29 +95,35 @@
                 <img src="" alt="Anagram Hunt game" />
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                neque minima animi a rem. Ut nemo, eius et sed facere similique
-                exercitationem tempora dignissimos aperiam odit enim possimus
-                officiis nesciunt.
+                Anagram Hunt is a word puzzle game where players are challenged
+                to find hidden words by rearranging scrambled letters. Each
+                round gives you a set of jumbled letters, and your goal is to
+                discover as many valid words as possible before time runs out.
+                The game helps improve vocabulary, spelling, and pattern
+                recognition while also training your brain to think quickly and
+                creatively.
               </p>
               <div>
-                <button class="btn">Play</button>
+                <a href="./pages/games/anagram-hunt.html" class="btn">Play</a>
               </div>
             </div>
 
             <div class="game-card card">
               <h2>Math Facts</h2>
               <div class="img-container">
-                <img src="" alt="Math Facts game" />
+                <img src="./images/math-facts.png" alt="Math Facts game" />
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                neque minima animi a rem. Ut nemo, eius et sed facere similique
-                exercitationem tempora dignissimos aperiam odit enim possimus
-                officiis nesciunt.
+                The Math Facts Game is a fast-paced way to practice and improve
+                basic arithmetic skills like addition, subtraction,
+                multiplication, and division. Players are given random problems
+                to solve within a time limit, helping build speed, accuracy, and
+                confidence with numbers. Whether you're learning the basics or
+                trying to sharpen your mental math, the game turns practice into
+                something fun and interactive instead of repetitive drills.
               </p>
               <div>
-                <button class="btn">Play</button>
+                <a href="./pages/games/math-facts.html" class="btn">Play</a>
               </div>
             </div>
           </section>
