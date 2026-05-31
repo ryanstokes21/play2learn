@@ -2,6 +2,11 @@
   margin-top: 1rem;
 }
 
+.center-y {
+  display: flex;
+  justify-content: center;
+}
+
 .form-input {
   display: flex;
   flex-direction: column;
@@ -11,6 +16,10 @@
 .form-input input,
 textarea {
   width: 75%;
+}
+
+select {
+  width: 50%;
 }
 
 .action-btn {

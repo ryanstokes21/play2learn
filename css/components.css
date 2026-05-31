@@ -4,6 +4,7 @@
   background-color: var(--sidebar-bg);
   color: white;
   padding: 2rem 1.5rem;
+  height: 100vh;
 }
 
 .logo {
@@ -91,9 +92,13 @@ main {
   width: 100%;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 .card {
   background-color: var(--card-bg);
-  padding: 2rem;
+  padding: 3rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
@@ -110,12 +115,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 /* quotes section */
 
+.testimonial {
+  width: 75%;
+}
+
 .quote {
-  background-color: white;
   padding: 2rem;
   box-shadow: var(--shadow);
 }
@@ -128,6 +136,15 @@ main {
 .quote p {
   color: var(--text-light);
   line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+#name {
+  text-align: end;
+}
+
+.hidden {
+  display: none;
 }
 
 /* games section */
@@ -148,8 +165,8 @@ main {
 }
 
 .img-container {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   background-color: #e5e7eb;
   border-radius: 14px;
   margin-bottom: 1.5rem;
@@ -173,6 +190,7 @@ main {
 }
 
 .btn {
+  text-decoration: none;
   border: none;
   background-color: var(--primary);
   color: white;
@@ -189,4 +207,42 @@ main {
 .btn:hover {
   background-color: var(--primary-hover);
   transform: translateY(-2px);
+}
+
+.game-btn {
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: bold;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.key {
+  height: 50px;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.clear-btn {
+  background-color: var(--primary);
+  color: white;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
 }
