@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/main.css" />
+    <script type="module" src="../../js/main.js"></script>
     <title>Math Facts</title>
   </head>
   <body>
@@ -77,7 +78,55 @@
           </div>
         </header>
 
-        <main>nothing here yet</main>
+        <main class="center center-y">
+          <div class="card card-small">
+            <div id="math-facts-start-menu">
+              <h1 class="margin-bottom">Math Facts Practice</h1>
+              <div class="flex">
+                <label for="operation">Operation:</label>
+                <select name="operation" id="operation">
+                  <option value="Addition">Addition</option>
+                  <option value="Subtraction">Subtraction</option>
+                  <option value="Multiplication">Multiplication</option>
+                  <option value="Division">Division</option>
+                </select>
+
+                <div>
+                  <button class="game-btn" id="game-btn">Go</button>
+                </div>
+              </div>
+              <div class="insturction">
+                <ol>
+                  <li>Select operation.</li>
+                  <li>Press <strong>Go</strong>.</li>
+                  <li>How many problems can you solve in 30 seconds?</li>
+                </ol>
+              </div>
+            </div>
+            <div id="math-facts-game-board" class="hidden">
+              <h1>Math Facts Practice</h1>
+              <p id="selected-operation"></p>
+              <div id="problem">2 + 2</div>
+              <input type="text" id="answer-input" readonly />
+
+              <div class="keypad">
+                <button class="key" data-value="1">1</button>
+                <button class="key" data-value="2">2</button>
+                <button class="key" data-value="3">3</button>
+                <button class="key" data-value="4">4</button>
+                <button class="key" data-value="5">5</button>
+                <button class="key" data-value="6">6</button>
+                <button class="key" data-value="7">7</button>
+                <button class="key" data-value="8">8</button>
+                <button class="key" data-value="9">9</button>
+                <button class="key" data-value="0">0</button>
+                <button class="clear-btn">CLEAR</button>
+              </div>
+              <p id="score">Score: 0</p>
+              <p id="timer">Time Left: 30 seconds</p>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   </body>
