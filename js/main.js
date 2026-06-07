@@ -1,21 +1,24 @@
 import showTestimonial from './quotes.js';
-import { selectOperation, createMathProblem } from './math-facts.js';
+import { startGame, playGame } from './math-facts.js';
 
 const gameBtn = document.getElementById('game-btn');
 const mathFactsStartMenu = document.getElementById('math-facts-start-menu');
 const mathFactsGameBoard = document.getElementById('math-facts-game-board');
-const operationSelect = document.getElementById('operation');
+const quoteEl = document.getElementById('quote-el');
 
 if (gameBtn) {
   gameBtn.addEventListener('click', () => {
     mathFactsStartMenu.classList.toggle('hidden');
     mathFactsGameBoard.classList.toggle('hidden');
-    selectOperation(operationSelect);
-    const { problem } = createMathProblem(operationSelect.value);
-
-    document.getElementById('problem').textContent = problem;
+    startGame();
   });
 }
 
-showTestimonial();
-setInterval(showTestimonial, 10000);
+if (mathFactsGameBoard) {
+  playGame();
+}
+
+if (quoteEl) {
+  showTestimonial();
+  setInterval(showTestimonial, 10000);
+}

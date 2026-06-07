@@ -103,28 +103,33 @@
                 </ol>
               </div>
             </div>
-            <div id="math-facts-game-board" class="hidden">
+            <section id="math-facts-game-board" class="hidden">
               <h1>Math Facts Practice</h1>
               <p id="selected-operation"></p>
-              <div id="problem">2 + 2</div>
-              <input type="text" id="answer-input" readonly />
+              <div id="game-board">
+                <div id="problem">2 + 2</div>
+                <input type="text" id="answer-input" readonly />
 
-              <div class="keypad">
-                <button class="key" data-value="1">1</button>
-                <button class="key" data-value="2">2</button>
-                <button class="key" data-value="3">3</button>
-                <button class="key" data-value="4">4</button>
-                <button class="key" data-value="5">5</button>
-                <button class="key" data-value="6">6</button>
-                <button class="key" data-value="7">7</button>
-                <button class="key" data-value="8">8</button>
-                <button class="key" data-value="9">9</button>
-                <button class="key" data-value="0">0</button>
-                <button class="clear-btn">CLEAR</button>
+                <div class="keypad" id="keypad">
+                  <button class="key" data-value="1">1</button>
+                  <button class="key" data-value="2">2</button>
+                  <button class="key" data-value="3">3</button>
+                  <button class="key" data-value="4">4</button>
+                  <button class="key" data-value="5">5</button>
+                  <button class="key" data-value="6">6</button>
+                  <button class="key" data-value="7">7</button>
+                  <button class="key" data-value="8">8</button>
+                  <button class="key" data-value="9">9</button>
+                  <button class="key" data-value="0">0</button>
+                  <button class="clear-btn key" data-value="clear">
+                    CLEAR
+                  </button>
+                </div>
+                <p id="score">Score: 0</p>
+                <p id="timer">Time Left: 30 seconds</p>
               </div>
-              <p id="score">Score: 0</p>
-              <p id="timer">Time Left: 30 seconds</p>
-            </div>
+            </section>
+            <section id="endScreen" class="hidden"></section>
           </div>
         </main>
       </div>
