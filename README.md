@@ -2,6 +2,20 @@
 
 Play2Learn is a browser-based educational web platform built with HTML, CSS, and JavaScript. The project is designed to provide interactive learning activities for students, including a Math Facts game that helps users practice arithmetic skills in an engaging way.
 
+## Screenshots
+
+### Home Page
+
+![Home Page](assets/images/home-page.png)
+
+### Math Facts Game
+
+![Math Facts Game](assets/images/math-facts.png)
+
+### About Page
+
+![About Page](assets/images/about-page.png)
+
 ## Features
 
 * Multi-page educational website layout
