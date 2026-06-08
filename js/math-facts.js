@@ -6,6 +6,8 @@ const keypad = document.getElementById('keypad');
 const answerInput = document.getElementById('answer-input');
 const gameBoard = document.getElementById('game-board');
 const scoreEl = document.getElementById('score');
+const finalScoreEl = document.getElementById('final-score');
+const playAgainBtn = document.getElementById('play-again-btn');
 const endScreen = document.getElementById('endScreen');
 
 let interval;
@@ -47,12 +49,13 @@ function clickHandler(e) {
 }
 
 function keyDownHandler(e) {
-  console.log('key pressed:', e.key);
   if (gameOver) return;
   if (e.key >= '0' && e.key <= '9') {
+    e.preventDefault();
     handleInput(e.key);
   }
   if (e.key === 'Backspace') {
+    e.preventDefault();
     answerInput.value = answerInput.value.slice(0, -1);
   }
 }
@@ -141,21 +144,14 @@ function renderMathProblem(problem) {
 }
 
 function endGame() {
-  endScreen.replaceChildren();
   clearInterval(interval);
 
   gameBoard.classList.add('hidden');
   endScreen.classList.remove('hidden');
 
-  timerEl.textContent = 'Times up!';
-  const finalScoreText = document.createElement('p');
-  finalScoreText.textContent = 'Your final score is:';
-  const finalScore = document.createElement('p');
-  finalScore.textContent = score;
-  const playAgainBtn = document.createElement('button');
-  playAgainBtn.classList.add('btn');
-  playAgainBtn.textContent = 'Play Again';
-  endScreen.append(timerEl, finalScoreText, finalScore, playAgainBtn);
+  finalScoreEl.textContent = score;
+}
 
+if (playAgainBtn) {
   playAgainBtn.addEventListener('click', startGame);
 }
