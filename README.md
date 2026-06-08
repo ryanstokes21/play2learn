@@ -6,7 +6,7 @@ Play2Learn is a browser-based educational web platform built with HTML, CSS, and
 
 ### Home Page
 
-![Home Page](assets/images/home-page.png)
+![Home Page](assets/images/home.png)
 
 ### Math Facts Game
 
@@ -14,27 +14,27 @@ Play2Learn is a browser-based educational web platform built with HTML, CSS, and
 
 ### About Page
 
-![About Page](assets/images/about-page.png)
+![About Page](assets/images/about.png)
 
 ## Features
 
-* Multi-page educational website layout
-* Interactive Math Facts game
-* Timer-based gameplay
-* Score tracking
-* Multiple operation modes
-* On-screen keypad input
-* Dynamic UI updates with JavaScript
-* Responsive page structure
-* Organized project files using HTML, CSS, and JavaScript
+- Multi-page educational website layout
+- Interactive Math Facts game
+- Timer-based gameplay
+- Score tracking
+- Multiple operation modes
+- On-screen keypad input
+- Dynamic UI updates with JavaScript
+- Responsive page structure
+- Organized project files using HTML, CSS, and JavaScript
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript
-* Git
-* GitHub
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
 
 ## What I Learned
 
@@ -42,13 +42,13 @@ While building Play2Learn, I practiced structuring a larger front-end project, o
 
 ## Future Improvements
 
-* Add more educational games
-* Improve mobile responsiveness
-* Add localStorage to save scores
-* Add difficulty levels
-* Improve accessibility
-* Add user progress tracking
-* Polish the visual design
+- Add more educational games
+- Improve mobile responsiveness
+- Add localStorage to save scores
+- Add difficulty levels
+- Improve accessibility
+- Add user progress tracking
+- Polish the visual design
 
 ## Project Status
 
