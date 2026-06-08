@@ -11,7 +11,6 @@ const playAgainBtn = document.getElementById('play-again-btn');
 const endScreen = document.getElementById('endScreen');
 
 let interval;
-let currentProblem = null;
 let currentAnswer = null;
 let score = 0;
 let seconds = 30;
@@ -30,7 +29,7 @@ export function startGame() {
     gameBoard.classList.remove('hidden');
   }
   renderMathOperator();
-  currentProblem = generateMathProblem();
+  const currentProblem = generateMathProblem();
   renderMathProblem(currentProblem);
   currentAnswer = currentProblem.answer;
   startTimer();
@@ -70,7 +69,7 @@ function handleInput(value) {
     answerInput.value = '';
     score++;
     scoreEl.textContent = `Score: ${score}`;
-    currentProblem = generateMathProblem();
+    const currentProblem = generateMathProblem();
     renderMathProblem(currentProblem);
     currentAnswer = currentProblem.answer;
   }
