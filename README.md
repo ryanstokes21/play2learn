@@ -6,7 +6,7 @@ Play2Learn is a browser-based educational web platform built with HTML, CSS, and
 
 ### Home Page
 
-![Home Page](assets/images/home.png)
+![Home Page](assets/images/home-page.png)
 
 ### Math Facts Game
 
@@ -14,7 +14,7 @@ Play2Learn is a browser-based educational web platform built with HTML, CSS, and
 
 ### About Page
 
-![About Page](assets/images/about.png)
+![About Page](assets/images/about-page.png)
 
 ## Features
 
