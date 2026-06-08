@@ -1,5 +1,7 @@
 # Play2Learn
 
+Live Demo: https://ryanstokes21.github.io/play2learn/
+
 Play2Learn is a browser-based educational web platform built with HTML, CSS, and JavaScript. The project is designed to provide interactive learning activities for students, including a Math Facts game that helps users practice arithmetic skills in an engaging way.
 
 ## Screenshots
