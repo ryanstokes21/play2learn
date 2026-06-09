@@ -1,4 +1,6 @@
-/* siderbar */
+.dashboard-layout {
+  background-color: var(--main-bg);
+}
 
 .sidebar {
   background-color: var(--sidebar-bg);
@@ -223,11 +225,6 @@ p {
     transform 0.2s ease;
 }
 
-.btn:hover {
-  background-color: var(--primary-hover);
-  transform: translateY(-2px);
-}
-
 .key {
   height: 50px;
   border: none;
@@ -245,4 +242,8 @@ p {
   font-size: 1rem;
   cursor: pointer;
   border: none;
+}
+
+.mobile-footer {
+  display: none;
 }
