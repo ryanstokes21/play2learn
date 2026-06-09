@@ -22,6 +22,3 @@ if (quoteEl) {
   showTestimonial();
   setInterval(showTestimonial, 10000);
 }
-
-if (endScreen) {
-}
