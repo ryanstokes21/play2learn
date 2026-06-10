@@ -9,6 +9,7 @@ const registerLink = document.getElementById('register-link');
 const loginLink = document.getElementById('login-link');
 const registerForm = document.getElementById('register-form');
 const loginForm = document.getElementById('login-form');
+const gamesDropdownBtn = document.getElementById('games-dropdown-btn');
 
 if (gameBtn) {
   gameBtn.addEventListener('click', () => {
@@ -38,5 +39,12 @@ if (loginLink) {
   loginLink.addEventListener('click', () => {
     registerForm.classList.add('hidden');
     loginForm.classList.remove('hidden');
+  });
+}
+
+if (gamesDropdownBtn) {
+  gamesDropdownBtn.addEventListener('click', () => {
+    console.log('clicked');
+    gamesDropdownBtn.parentElement.classList.toggle('open');
   });
 }
