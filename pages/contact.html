@@ -86,15 +86,20 @@
               <form action="javascript:alert('Form Submitted')" method="post">
                 <div class="form-input">
                   <label for="contact-email">Your email:</label>
-                  <input type="email" name="contact-email" id="contact-email" />
+                  <input
+                    type="email"
+                    name="contact-email"
+                    id="contact-email"
+                    required
+                  />
                 </div>
                 <div class="form-input">
                   <label for="subject">Subject:</label>
-                  <input type="text" name="subject" id="subject" />
+                  <input type="text" name="subject" id="subject" required />
                 </div>
                 <div class="form-input">
                   <label for="msg"> Message: </label>
-                  <textarea name="msg" id="msg"></textarea>
+                  <textarea name="msg" id="msg" required></textarea>
                 </div>
                 <button type="submit" class="action-btn">SEND</button>
               </form>

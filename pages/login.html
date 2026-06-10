@@ -92,11 +92,18 @@
                     name="email"
                     id="login-email"
                     autocomplete="email"
+                    required
                   />
                 </div>
                 <div class="form-input">
                   <label for="login-psw">Password:</label>
-                  <input type="password" name="psw" id="login-psw" />
+                  <input
+                    type="password"
+                    name="psw"
+                    id="login-psw"
+                    required
+                    minlength="8"
+                  />
                 </div>
                 <div>
                   <p id="register-link" class="link" aria-label="link">
@@ -118,19 +125,39 @@
                     name="email"
                     id="register-email"
                     autocomplete="email"
+                    required
                   />
                 </div>
                 <div class="form-input">
                   <label for="register-psw">Password:</label>
-                  <input type="password" name="psw" id="register-psw" />
+                  <input
+                    type="password"
+                    name="psw"
+                    id="register-psw"
+                    required
+                    minlength="6"
+                  />
                 </div>
                 <div class="form-input">
                   <label for="confirm-register-psw">Confirm Password:</label>
-                  <input type="password" name="psw" id="confirm-register-psw" />
+                  <input
+                    type="password"
+                    name="psw"
+                    id="confirm-register-psw"
+                    required
+                    minlength="6"
+                  />
                 </div>
                 <div>
-                  <input type="checkbox" name="age-confirmation" id="age-confirmation">
-                  <label for="age-confirmation">I am over 13 and like playing games</label>
+                  <input
+                    type="checkbox"
+                    name="age-confirmation"
+                    id="age-confirmation"
+                    required
+                  />
+                  <label for="age-confirmation"
+                    >I am over 13 and like playing games</label
+                  >
                 </div>
                 <div>
                   <p id="login-link" class="link" aria-label="link">
@@ -139,6 +166,7 @@
                 </div>
                 <button type="submit" class="action-btn">REGISTER</button>
               </form>
+            </div>
           </div>
         </main>
         <footer class="mobile-footer">
