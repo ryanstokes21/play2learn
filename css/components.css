@@ -42,13 +42,32 @@
   background-color: #1f2937;
 }
 
+.nav-dropdown-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: white;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-dropdown-btn:hover {
+  background-color: #1f2937;
+}
+
 .contains ul {
   display: none;
   margin-top: 0.5rem;
   margin-left: 1rem;
 }
 
-.contains:hover ul {
+.contains.open ul {
   display: block;
 }
 
@@ -57,7 +76,7 @@
   opacity: 0.85;
 }
 
-svg {
+.social-links svg {
   fill: white;
   height: 30px;
 }

@@ -38,6 +38,12 @@
     border-radius: 8px;
   }
 
+  .nav-dropdown-btn {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
   .contains ul {
     display: none;
     position: absolute;
@@ -49,7 +55,7 @@
     z-index: 1000;
   }
 
-  .contains:hover ul {
+  .contains.open ul {
     display: block;
   }
 
