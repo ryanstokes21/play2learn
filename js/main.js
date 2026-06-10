@@ -5,6 +5,10 @@ const gameBtn = document.getElementById('game-btn');
 const mathFactsStartMenu = document.getElementById('math-facts-start-menu');
 const mathFactsGameBoard = document.getElementById('math-facts-game-board');
 const quoteEl = document.getElementById('quote-el');
+const registerLink = document.getElementById('register-link');
+const loginLink = document.getElementById('login-link');
+const registerForm = document.getElementById('register-form');
+const loginForm = document.getElementById('login-form');
 
 if (gameBtn) {
   gameBtn.addEventListener('click', () => {
@@ -21,4 +25,18 @@ if (mathFactsGameBoard) {
 if (quoteEl) {
   showTestimonial();
   setInterval(showTestimonial, 10000);
+}
+
+if (registerLink) {
+  registerLink.addEventListener('click', () => {
+    loginForm.classList.add('hidden');
+    registerForm.classList.remove('hidden');
+  });
+}
+
+if (loginLink) {
+  loginLink.addEventListener('click', () => {
+    registerForm.classList.add('hidden');
+    loginForm.classList.remove('hidden');
+  });
 }
