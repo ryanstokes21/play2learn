@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js"></script>
     <title>Login</title>
   </head>
   <body>
@@ -78,21 +79,60 @@
         </header>
 
         <main class="center center-y">
-          <div class="card card-small">
+          <div class="card card-small" id="login-form">
             <h2>Login</h2>
             <div class="form-layout">
               <form action="javascript:alert('Form Submitted')" method="post">
                 <div class="form-input">
-                  <label for="email">Your email:</label>
-                  <input type="email" name="email" id="login-email" />
+                  <label for="login-email">Your email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="login-email"
+                    autocomplete="email"
+                  />
                 </div>
                 <div class="form-input">
-                  <label for="psw">Password:</label>
+                  <label for="login-psw">Password:</label>
                   <input type="password" name="psw" id="login-psw" />
+                </div>
+                <div>
+                  <p id="register-link" class="link" aria-label="link">
+                    Need an account? Register.
+                  </p>
                 </div>
                 <button type="submit" class="action-btn">LOGIN</button>
               </form>
             </div>
+          </div>
+          <div class="card card-small hidden" id="register-form">
+            <h2>Register</h2>
+            <div class="form-layout">
+              <form action="javascript:alert('Form Submitted')" method="post">
+                <div class="form-input">
+                  <label for="register-email">Your email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="register-email"
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="register-psw">Password:</label>
+                  <input type="password" name="psw" id="register-psw" />
+                </div>
+                <div class="form-input">
+                  <label for="confirm-register-psw">Confirm Password:</label>
+                  <input type="password" name="psw" id="confirm-register-psw" />
+                </div>
+                <div>
+                  <p id="register-link" class="link" aria-label="link">
+                    Need an account? Register.
+                  </p>
+                </div>
+                <button type="submit" class="action-btn">LOGIN</button>
+              </form>
           </div>
         </main>
         <footer class="mobile-footer">
