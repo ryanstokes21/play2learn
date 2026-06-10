@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="../js/main.js"></script>
     <title>About us</title>
   </head>
   <body>
@@ -15,8 +16,10 @@
             <ul>
               <li><a href="../index.html">Home</a></li>
               <li class="contains">
-                <a href="#">Games</a>
-                <ul>
+                <button class="nav-dropdown-btn" id="games-dropdown-btn">
+                  Games
+                </button>
+                <ul class="dropdown-menu" id="games-dropdown-menu">
                   <li>
                     <a href="./games/anagram-hunt.html">Anagram Hunt</a>
                   </li>
@@ -28,7 +31,7 @@
             </ul>
           </nav>
         </div>
-        <nav class="nav-menu sidebar-socials">
+        <nav class="nav-menu sidebar-socials social-links">
           <ul>
             <li>
               <a href="./contact.html"
