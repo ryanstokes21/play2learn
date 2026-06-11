@@ -4,11 +4,12 @@ const mathProblem = document.getElementById('problem');
 const timerEl = document.getElementById('timer');
 const keypad = document.getElementById('keypad');
 const answerInput = document.getElementById('answer-input');
-const gameBoard = document.getElementById('game-board');
 const scoreEl = document.getElementById('score');
 const finalScoreEl = document.getElementById('final-score');
 const playAgainBtn = document.getElementById('play-again-btn');
 const endScreen = document.getElementById('endScreen');
+const mathFactsGameBoard = document.getElementById('math-facts-game-board');
+const mathFactsStartMenu = document.getElementById('math-facts-start-menu');
 
 let interval;
 let currentAnswer = null;
@@ -20,18 +21,20 @@ export function startGame() {
   gameOver = false;
   seconds = 30;
   score = 0;
+
   scoreEl.textContent = 'Score: 0';
   timerEl.textContent = 'Time Left: 30 seconds';
   answerInput.value = '';
+
   clearInterval(interval);
-  if (endScreen) {
-    endScreen.classList.add('hidden');
-    gameBoard.classList.remove('hidden');
-  }
+
+  showScreen(mathFactsGameBoard);
+
   renderMathOperator();
   const currentProblem = generateMathProblem();
   renderMathProblem(currentProblem);
   currentAnswer = currentProblem.answer;
+
   startTimer();
 }
 
@@ -144,13 +147,21 @@ function renderMathProblem(problem) {
 
 function endGame() {
   clearInterval(interval);
-
-  gameBoard.classList.add('hidden');
-  endScreen.classList.remove('hidden');
-
+  showScreen(endScreen);
   finalScoreEl.textContent = score;
 }
 
+export function showScreen(screenToShow) {
+  const screens = [mathFactsStartMenu, mathFactsGameBoard, endScreen];
+  screens.forEach((screen) => {
+    screen.classList.add('hidden');
+  });
+  screenToShow.classList.remove('hidden');
+}
+
 if (playAgainBtn) {
-  playAgainBtn.addEventListener('click', startGame);
+  playAgainBtn.addEventListener('click', () => {
+    clearInterval(interval);
+    showScreen(mathFactsStartMenu);
+  });
 }
