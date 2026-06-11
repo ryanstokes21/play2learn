@@ -35,6 +35,7 @@ export function startGame() {
   renderMathProblem(currentProblem);
   currentAnswer = currentProblem.answer;
 
+  answerInput.focus();
   startTimer();
 }
 
@@ -75,6 +76,7 @@ function handleInput(value) {
     const currentProblem = generateMathProblem();
     renderMathProblem(currentProblem);
     currentAnswer = currentProblem.answer;
+    answerInput.focus();
   }
 }
 
