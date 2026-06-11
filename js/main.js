@@ -41,7 +41,6 @@ if (loginLink) {
 
 if (gamesDropdownBtn) {
   gamesDropdownBtn.addEventListener('click', () => {
-    console.log('clicked');
     gamesDropdownBtn.parentElement.classList.toggle('open');
   });
 }
